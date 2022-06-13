@@ -20,7 +20,7 @@ export async function getServerSideProps() {
   await queryClient.prefetchQuery('pokemon', getPokemon);
   return {
     props: {
-      dehydratedStaet: dehydrate(queryClient),
+      dehydratedState: dehydrate(queryClient),
     },
   };
 }
